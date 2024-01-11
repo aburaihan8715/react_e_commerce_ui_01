@@ -1,24 +1,15 @@
-// import Cart from "./pages/Cart";
-import Home from "./pages/Home";
-
-// import Register from "./pages/Register";
-
-// import ProductList from "./pages/ProductList";
-
-// import Product from "./pages/Product";
-
-// import Login from "./pages/Login";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/routes";
+import { Provider as ReduxProvider } from "react-redux";
+import store from "./redux/store";
 
 const App = () => {
   return (
-    <div>
-      {/* <Cart /> */}
-      <Home />
-      {/* <Login /> */}
-      {/* <Product /> */}
-      {/* <ProductList /> */}
-      {/* <Register /> */}
-    </div>
+    <>
+      <ReduxProvider store={store}>
+        <RouterProvider router={router} />
+      </ReduxProvider>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Navigate } from "react-router-dom";
 
 const Container = styled.div`
   width: 100vw;
@@ -54,6 +55,12 @@ const Link = styled.a`
 `;
 
 const Login = () => {
+  const user = true;
+
+  if (user) {
+    return <Navigate to="/" replace={true} />;
+  }
+
   return (
     <Container>
       <Wrapper>
