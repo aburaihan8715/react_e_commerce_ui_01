@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import Navbar from "../components/Navbar";
-import Announcement from "../components/Announcement";
+import Announcement from "../components/announcement/Announcement";
 import Products from "../components/Products";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";

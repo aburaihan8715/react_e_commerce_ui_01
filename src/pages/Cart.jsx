@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import Navbar from "../components/Navbar";
-import Announcement from "../components/Announcement";
+import Announcement from "../components/announcement/Announcement";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import Footer from "../components/Footer";
